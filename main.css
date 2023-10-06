@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Hanken+Grotesk:wght@500;700;800&display=swap');
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --bg-Light-slate-blue:hsl(252, 100%, 67%);
+    --bg-Light-royal-blue:hsl(241, 81%, 54%);
+    --circle-Violet-blue:hsla(256, 72%, 46%, 1);
+    --circle-Persian-blue:hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+*{
+    /* reset */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #ddd;
+}
+ul{
+    list-style: none;
+}
+.continar{
+    background-color: var(--White);
+    width: 768px;
+    height: 500px;
+    -o-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+    margin: 50px auto;
+    box-shadow: 5px 5px 15px #00000045;
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media (max-width: 767px){
+    .continar{
+        width:100%;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+    }
+}
+    
+.left{
+    width: 368px;
+    background-color: var(--circle-Violet-blue);
+    -o-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    text-align: center;
+}
+@media (max-width: 767px){
+    .left{
+        width:100%;
+        
+        
+    }
+}
+.left > p{
+color: var(--Light-lavender);
+font-size: 18px;
+
+}
+.left .cercl{
+    background-color: var(--Cobalt-blue);
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left .cercl p:first-child{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:var(--White);
+    
+}
+.left .cercl p:last-child{
+    font-size: 15px;
+    color: var(--Light-lavender);
+}
+.left .Great{
+    color: var(--White);
+    font-size: 25px;
+}
+.left .Great + p{
+    font-size: 15px;
+    line-height: 1.6;
+}
+.rhigt{
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 25px;
+
+    
+}
+.rhigt h1{
+    color: var(--Dark-gray-blue);
+}
+@media (max-width: 767px){
+    .rhigt{
+        width:100%;
+        padding: 0 30px;
+        
+    }
+}
+.rhigt ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--Pale-blue);
+    padding: 10px 20px;
+    -o-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+
+}
+.rhigt ul li p:first-child{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.rhigt ul li p:first-child svg{
+    margin-right: 10px;
+}
+.rhigt ul li p:last-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+.rhigt ul li p:last-child span:last-child{
+    color: var(--Light-lavender);
+}
+.rhigt ul li:first-child p:first-child{
+    color: var(--Light-red);
+}
+.rhigt ul li:nth-child(2) p:first-child{
+    color: var(--Orangey-yellow);
+}
+.rhigt ul li:nth-child(3) p:first-child{
+    color: var(--Green-teal);
+}
+.rhigt ul li:last-child p:first-child{
+    color: var(--Dark-gray-blue);
+}
+.rhigt button{
+    background-color: var(--Dark-gray-blue);
+    border: none;
+    padding: 20px 0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: var(--White);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.rhigt button:hover,
+.rhigt button:active{
+    background-color: var(--bg-Light-royal-blue);
+}
